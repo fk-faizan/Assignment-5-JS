@@ -780,4 +780,206 @@
     // }
 
 
-//
+// 9. Initialize an array with color names. Display the array elements in your browser.
+// a. Ask the user what color he/she wants to add to the beginning & add that color to the beginning of the array. Display the updated array in your browser.
+// b. Ask the user what color he/she wants to add to the end & add that color to the end of the array. Display the updated array in your browser.
+// c. Add two more color to the beginning of the array. Display the updated array in your browser.
+// d. Delete the first color in the array. Display the updated array in your browser.
+// e. Delete the last color in the array. Display the updated array in your browser.
+// f. Ask the user at which index he/she wants to add a color & color name. Then add the color to desired position/index. . Display the updated array in your browser.
+// g. Ask the user at which index he/she wants to delete color(s) & how many colors he/she wants to delete. Then remove the same number of color(s) from user-defined position/index. . Display the updated array in your browser. 
+
+// Solution:
+    // var color = ['blue', 'green', 'White', 'red', 'orange'];
+
+    // var newColor = prompt("Add New Color Name");
+
+    // color.unshift(newColor);  // add to the beginnin
+
+    // color.push(newColor); // add to the end
+
+    // color.push('red', 'orange'); // add
+
+    // color.shift(); // Delete the first color in the array
+
+    // color.pop(); // Delete the last color in the array
+
+    // var addColor = +prompt("Enter Array Index", "0,1,2..."); // f.... at which index he/she wants to add a color
+    // var newColor = prompt("Add New Color Name");
+    // color.splice(addColor,1, newColor);
+
+    // var delColor = +prompt("Enter Array Index", "0,1,2..."); // g.... at which index he/she wants to delete color(s) & how many colors
+    // var element =  +prompt("How Many Color", "0,1,2...");
+    // color.splice(delColor,element);
+
+    // document.write(color);
+    
+
+// 10. Write a program to store student scores in an array & sort the array in ascending order using Array’s sort method.
+
+// Solution:
+    // var studentScore = [320, 230, 480, 120];
+
+    // document.write("Scores of Students: " + studentScore + "<br>");
+    // document.write("Ordered Scores of Students: " + studentScore.sort());
+
+
+// 11. Write a program to initialize an array with city names. Copy 3 array elements from cities array to selectedCities array.
+
+// Solution:
+    // var cities = ['Karachi', 'Lahore', 'Islamadab', 'Quetta', 'Peshawar'];
+    // var selectCities = cities.slice(2,4);
+
+    // document.write("Cities list: <br>" + cities + "<br><br>");
+    // document.write("Selected cities list: <br>" + selectCities);
+
+
+// 12. Write a program to create a single string from the below mentioned array:
+// var arr = [“This ”, “ is ”, “ my ”, “ cat”]; (Use array’s join method)
+
+// Solution:
+    // var arr = ['This', 'is', 'my', 'cat'];
+
+    // document.write("Array: <br>" + arr + "<br><br>");
+    // document.write("String: <br>" + arr.join(" "));
+
+
+// 13. Create a new array. Store values one by one in such a way that you can access the values in the order in which they were stored. (FIFO-First In First Out)
+
+// Solution:
+    // var arr = [];
+
+    // for(var i = 0; i < 4; i++) {
+    //     arr.push(prompt("Store SomeThings"));
+    // }
+
+    // document.write("Devices:" + "<br>" + arr + "<br><br>");
+
+    // for(var a = 0; a < arr.length; a++) {
+    //     document.write("Out: <br>" + arr[a] + "<br>");
+    // }
+
+
+// 14. Create a new array. Store values one by one in such a way that you can access the values in reverse order. (Last InFirst Out)
+
+// Solution:
+    // var arr = [];
+
+    // for(var i = 0; i < 4; i++) {
+    //     arr.push(prompt("Store SomeThings"));
+    // }
+
+    // document.write("Devices:" + "<br>" + arr + "<br><br>");
+
+    // var arrReverse = arr.reverse();
+
+    // for(var a = 0; a < arrReverse.length; a++) {
+    //     document.write("Out: <br>" + arrReverse[a] + "<br>");
+    // }
+
+
+// 15. Write a program to store phone manufacturers (Apple, Samsung, Motorola, Nokia, Sony & Haier) in an array. Display the following dropdown/select menu in your browser using document.write() method:
+
+// Solution:
+    // var phone = ['Apple', 'Samsung', 'Motorola', 'Nokia', 'Sony', 'Haier'];
+
+    // for(var i = 0; i < phone.length; i++) {
+    //     document.write(phone[i] + "<br>");
+    // }
+        
+// ---------- END ----------
+
+
+
+
+
+// ---------- Chapter 17 - 20 "ARRAYS AND LOOP" ----------
+
+
+// 1. Declare and initialize an empty multidimensional array. (Array of arrays)
+
+// Solution:
+    // var arr = []
+
+
+// 2. Declare and initialize a multidimensional array representing the following matrix:
+
+// Solution:
+    // var arr = [[0, 1, 2, 3],[1, 0, 1, 2],[2, 1, 0, 1]];
+
+    // for(var i = 0; i < arr.length; i++) {
+    //     document.write(arr[i].join(" ")+ "<br>");
+    // }
+
+
+// 3. Write a program to print numeric counting from 1 to 10.
+
+// Solution:
+    // for(var i = 1; i <= 10; i++) {
+    //     document.write(i + "<br>");
+    // }
+
+
+// 4. Write a program to print multiplication table of any number using for loop. Table number & length should be taken as an input from user.
+
+// Solution:
+    // var number = +prompt("Enter a number to show its multiplication table");
+    // var lnth = +prompt("Enter length multipilication table");
+
+    // for(var i = 1; i <= lnth; i++) {
+    //     document.write(number + " x " + i + " = " + number*i + "</br>");
+    // }
+
+
+// 5. Write a program to print items of the following array using for loop:
+
+// Solution:
+    // var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+
+    // for(var i = 0; i < fruits.length; i++) {
+    //     document.write(fruits[i] + "<br>");
+    // }
+
+    // document.write("<br>");
+    // for(var i = 0; i < fruits.length; i++) {
+    //     document.write("Element at index " + i + " is " + fruits[i] + "<br>");
+    // }
+
+
+// 6. Generate the following series in your browser. See example output.
+// a. Counting: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+// b. Reverse counting: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+// c. Even: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20
+// d. Odd: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19
+// e. Series: 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k
+
+// Solution:
+    // var arra = []; // a Counting 1 - 15
+    // for(var i = 1; i <= 15; i++) {
+    //     arra.push(i);
+    // }
+    // document.write("Counting: <br>" + arra); // a
+
+    // var arrb = []; // b Reverse Counting 10 - 1
+    // for(var i = 1; i <= 10; i++) {
+    //     arrb.push(i);
+    // }
+    // document.write("<br><br> Reverse counting: <br>" + arrb.reverse()); // b
+
+    // var arrc = []; // c Even Number
+    // for(var i = 0; i <= 20; i++) {
+    //     arrc.push(i);
+    // }
+    // document.write("<br><br> Even: <br>" + arrc.filter(Number => Number % 2 == 0)); // c
+
+    // var arrd = []; // d Odd Number
+    // for(var i = 1; i <= 20; i++) {
+    //     arrd.push(i);
+    // }
+    // document.write("<br><br> Odd: <br>" + arrd.filter(Number => Number % 2 !== 0)); // d
+
+    // var arra = []; // e Series
+    // for(var i = 2; i <= 20; i = i + 2) {
+    //     arra.push(i);
+    // }
+    // document.write("<br><br> Series: <br>" + arra); // e
